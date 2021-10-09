@@ -81,4 +81,23 @@ public class TwoNumbersSumTest {
 
     }
 
+    @Test
+    public void addThreeThreedigitnumber(){
+        ArrayList<Integer> a = new ArrayList<Integer>();
+        a.add(5);
+        a.add(1);
+        ArrayList<Integer> b = new ArrayList<Integer>();
+        b.add(9);
+        b.add(6);
+        b.add(1);
+        TwoNumbersSum s = new TwoNumbersSum();
+        ArrayList<Integer> result = s.addTwoNumbers(a,b);
+        ArrayList<Integer> expected = new ArrayList<Integer>();
+        expected.add(1);
+        expected.add(0);
+        expected.add(1);
+        expected.add(2);
+        Assertions.assertIterableEquals(expected,result);
+
+    }
 }
