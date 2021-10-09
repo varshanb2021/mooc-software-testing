@@ -24,7 +24,9 @@ class TwoNumbersSum {
             }
             result.add(i, total);
         }
-
+        if (complement==1) {
+            result.add(result.size(), complement);
+        }
         Collections.reverse(result);
         return result;
     }
